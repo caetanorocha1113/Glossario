@@ -1,0 +1,260 @@
+body{
+    font-family: "Epilogue";
+    background: radial-gradient(ellipse at top, #1b0835 0%, #040615 60%);
+    color: #F5F5F5 ;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+::selection {
+    background-color: #986dff;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #986dff;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #040615;
+}
+
+header{
+    padding: 0px 30px;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 2px solid #B8860B;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+header .ula nav .nav-list li a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(1, 0, 0.07, 1);
+}
+
+header .ula nav .nav-list li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+
+.img-header{
+    width: 90px;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+header .ula nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100px;
+    padding: 0px 8px;
+
+}
+
+header .ula nav ul{
+    display: flex;
+}
+
+
+.ula{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 700px;
+}
+  
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+
+    font-size: 20px;
+    padding: 0px 15px;
+    
+} 
+  
+header .ula nav ul li a {
+    color: #c6c6c6;
+    text-decoration: none;
+    position: relative;
+}
+
+header .ula nav .nav-list li a:hover {
+    color: #fff
+}
+
+
+.banner{
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: grid;
+    margin: auto;
+    padding: 0;
+    background: radial-gradient(ellipse at top, #1b0835 0%, #040615 70%);
+}
+
+.a:hover{
+    font-size: 120px;
+    color: #986dff;
+    transition: color 0.7s ease, font-size  0.7s ease; 
+}
+
+.a{
+    color: #F5F5F5;
+    font-size: 100px;
+    margin: auto;
+    padding: 0px;
+
+}
+
+h2{
+    color: #f5f5f5;
+    margin: auto;
+    padding: 0;
+}
+
+#s-skills {
+    padding: 96px 48px;
+    background-color: #0c0b16;
+}
+
+.grid-layout {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#s-skills .grid-layout #skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 8px;
+}
+
+#s-skills .grid-layout #skills #skills-text {
+min-height: auto;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
+#s-skills .grid-layout #skills #skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+#s-skills .grid-layout #skills #skills-cards article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 22%;
+    flex-grow: 1;
+    height: 120px;
+    background-color: #040615;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: border-color 1s ease;
+}
+
+#s-skills .grid-layout #skills #skills-text h2 {
+    margin-bottom: 32px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+#s-skills .grid-layout #skills #skills-text p {
+    max-width: 500px;
+    line-height: 3.2rem;
+    color: #c6c6c6;
+    font-size: 1.8rem;
+}
+
+#s-skills .grid-layout #skills #skills-text {
+    min-height: 400px;
+}
+#s-skills .grid-layout #skills div, #s-skills .grid-layout #skills article {
+    width: 50%;
+}
+
+#s-skills .grid-layout #skills #skills-text h2 span {
+    color: #986dff;
+}
+
+    
+#s-skills .grid-layout #skills #skills-cards article.intervalCardReveal:hover {
+  border-color: #986dff;
+}
+
+.img-skills{
+width: 150px;
+height: 93px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #0c0b16;
+    color: #fff;
+    padding: 24px 0px;
+    border-top: 1px solid #B8860B;
+}
+
+footer .grid-layout {
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
