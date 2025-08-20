@@ -81,7 +81,6 @@ header .ula nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     height: 100px;
     padding: 0px 8px;
 
@@ -343,7 +342,7 @@ footer .grid-layout {
     gap: 32px; 
 }
 
-span::after {
+.spann::after {
   content: " ✨";
   color: #986dff;
   animation: sparkle 1s infinite alternate;
